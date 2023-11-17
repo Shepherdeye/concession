@@ -20,7 +20,7 @@
      position: relative;
      background-color: #fff;
      width: 100%;
-     height: 100%;
+     height: 100vh;
      text-align: center;
      padding: 1%;
      /* overflow: scroll; */
@@ -80,10 +80,20 @@
     outline: none !important;
     border: none !important;
   padding: 1px;
-       transition: none;
-
+  transition: none;
     /* background-color: #333 !important; */
 }
+#copy2{
+    position: absolute;
+    bottom: -73px;
+    left: 191px;
+    outline: none !important;
+    border: none !important;
+  padding: 1px;
+  transition: none;
+    /* background-color: #333 !important; */
+}
+
 
 .changeme{
     transition:all 1s ease-in-out ;
