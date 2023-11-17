@@ -8,6 +8,8 @@
  }
 
  .container-fluid {
+
+    position: fixed;
      padding: 5%;
      background-color: #DDD;
      width: 100%;
@@ -17,11 +19,13 @@
 
  .container {
     border-radius: 10px;
-     position: relative;
+     position: fixed;
      background-color: #fff;
      width: 100%;
      height: 100vh;
      text-align: center;
+     top: 24px;
+     left: 115px;
      padding: 1%;
      /* overflow: scroll; */
      box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
@@ -98,4 +102,9 @@
 .changeme{
     transition:all 1s ease-in-out ;
     background-color: #DDD;
+}
+@media all and (max-width:600px){
+    .super{
+        margin: 50px auto;
+    }
 }
