@@ -11,6 +11,8 @@ let day = document.getElementById("days"),
   lessThan = document.getElementById("lessThan"),
   lessThan2 = document.getElementById("lessThan2"),
   copyText = document.querySelector("#copy"),
+  copyText2 = document.querySelector("#copy2"),
+
 
   result = document.getElementById("result"),
   duration = document.getElementById("duration"),
@@ -39,17 +41,22 @@ less.onclick = function () {
 more.onclick = function () {
   // console.log("sayed")
   moreThan.classList.remove("hidden1");
+ document.getElementById("copy2").classList.remove("hidden1");
+
 }
 
 copyText.onclick=function(){
   navigator.clipboard.writeText(lessThan2.innerText);
-   document.getElementById("copy").style.background="white";
-
-
+ document.getElementById("copy").style.background="white";
   
 }
 
 
+copyText2.onclick=function(){
+  navigator.clipboard.writeText(result.innerText);
+ document.getElementById("copy2").style.background="white";
+  
+}
 
 
 
