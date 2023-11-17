@@ -80,6 +80,8 @@
     outline: none !important;
     border: none !important;
   padding: 1px;
+       transition: none;
+
     /* background-color: #333 !important; */
 }
 
