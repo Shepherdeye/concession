@@ -43,6 +43,8 @@ more.onclick = function () {
 
 copyText.onclick=function(){
   navigator.clipboard.writeText(lessThan2.innerText);
+   document.getElementById("copy").style.background="white";
+
 
   
 }
