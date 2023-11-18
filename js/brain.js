@@ -196,6 +196,10 @@ cpackages.onchange = function () {
   } else if (cpackages.value == "11") {
     document.getElementById("Fresult").textContent = " ";
     document.getElementById("FresultD").classList.remove("hidden");
+    document.getElementById("ch1").classList.remove("hidden");
+    document.getElementById("ch2").classList.remove("hidden");
+    document.getElementById("packagesx").classList.remove("hidden");
+    
 
 
   } else {
