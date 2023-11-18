@@ -24,10 +24,13 @@ onspot.onclick = function () {
   document.getElementById("we").classList.add("hidden");
   document.getElementById("onspot").classList.remove("hidden");
   mobile.checked = false;
+  document.getElementById("start").classList.add("hidden");
 }
 mobile.onclick = function () {
   document.getElementById("onspot").classList.add("hidden");
   document.getElementById("we").classList.remove("hidden");
+  document.getElementById("start").classList.add("hidden")
+
   onspot.checked = false;
 
 }
@@ -163,6 +166,10 @@ cpackages.onchange = function () {
     document.getElementById("nots").textContent=" you should add by Using  BSS";
     document.getElementById("nots").style.color="Green";
     document.getElementById("tllink").classList.add("hidden");
+    document.getElementById("desc").classList.remove("hidden");
+    document.getElementById("descs").textContent=" 5GB Will Be Added For 3 Days";
+
+    
 
 
 
@@ -174,6 +181,7 @@ cpackages.onchange = function () {
     document.getElementById("nots").textContent=" you should add by Team leader";
     document.getElementById("nots").style.color="red";
     document.getElementById("tllink").classList.remove("hidden");
+    document.getElementById("descs").textContent=" 10GB Will Be Added For 7 Days By Team Leader";
     
 
 
@@ -191,6 +199,7 @@ cpackages.onchange = function () {
     document.getElementById("nots").textContent=" you should add by Team leader";
     document.getElementById("nots").style.color="red";
     document.getElementById("tllink").classList.remove("hidden");
+    document.getElementById("descs").textContent=" 20GB Will Be Added For 15 Days By Team Leader";
 
 
 
