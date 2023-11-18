@@ -142,6 +142,11 @@ ch2.onclick = function () {
 
   document.getElementById("ch5").checked = false;
   // cpackages.classList.remove("hidden");
+  document.getElementById("desc").classList.add("hidden");
+  document.getElementById("Fresult").classList.add("hidden");
+    document.getElementById("FresultD").classList.add("hidden");
+    document.getElementById("notf").classList.add("hidden");
+
 
 
 }
