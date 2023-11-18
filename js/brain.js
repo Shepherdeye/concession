@@ -168,6 +168,7 @@ cpackages.onchange = function () {
     document.getElementById("tllink").classList.add("hidden");
     document.getElementById("desc").classList.remove("hidden");
     document.getElementById("descs").textContent=" 5GB Will Be Added For 3 Days";
+    
 
     
 
@@ -181,7 +182,8 @@ cpackages.onchange = function () {
     document.getElementById("nots").textContent=" you should add by Team leader";
     document.getElementById("nots").style.color="red";
     document.getElementById("tllink").classList.remove("hidden");
-    document.getElementById("descs").textContent=" 10GB Will Be Added For 7 Days";
+    document.getElementById("desc").classList.remove("hidden");
+    document.getElementById("descs").textContent=" 10GB Will Be Added For 7 Days ";
     
 
 
@@ -199,7 +201,9 @@ cpackages.onchange = function () {
     document.getElementById("nots").textContent=" you should add by Team leader";
     document.getElementById("nots").style.color="red";
     document.getElementById("tllink").classList.remove("hidden");
-    document.getElementById("descs").textContent=" 20GB Will Be Added For 15 Days ";
+    document.getElementById("descs").textContent=" 20GB Will Be Added For 15 Days";
+    document.getElementById("desc").classList.remove("hidden");
+
 
 
 
