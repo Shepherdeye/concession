@@ -14,8 +14,12 @@
 <body>
 
     <div class="container-fluid">
+        <label class="mainchoiceL" for=""> On Spot Concession </label>
+        <input class="maininput" type="radio" id="onspoti" onclick="this.disabled=false">
+        <label class="mainchoiceL2" for=""> We mobile Concession </label>
+        <input class="maininput2" type="radio" id="mobilei">
 
-        <div class="container">
+        <div class="container" id="onspot">
 
             <h1> Onspot Concession </h1>
             <br>
@@ -48,16 +52,16 @@
                                 <input type="radio" id="less">
                                 <label for=""> IF less than 12 hour </label>
                                 <h6 class="hidden1" id="lessThan"> 12 H = 3 G</h3>
-                                    <h3 class="hidden1" id="lessThan2">3221225472 </h3> 
+                                    <h3 class="hidden1" id="lessThan2">3221225472 </h3>
                                     <button class="hidden1" onclick="copy()" id="copy">Copy</button>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="more">
                                 <input type="radio" id="more">
-                                
-                                <label for=""> IF More than 12 hour </label> 
-                                <br> 
+
+                                <label for=""> IF More than 12 hour </label>
+                                <br>
                                 <br>
                                 <div class="row hidden1 " id="moreThan">
                                     <div class="col-md-6">
@@ -88,11 +92,11 @@
                                         <br>
 
                                         <div class="col-md-6">
-                                            <input type="text" name="" id="gbytes" class=" gbytes"
+                                            <input type="number" name="" id="gbytes" class=" gbytes"
                                                 placeholder=" Enter number of G byte">
                                             <br>
                                             <br>
-                                            <input type="text" name="" id="days" class=" days"
+                                            <input type="number" name="" id="days" class=" days"
                                                 placeholder=" Enter number of Dayes">
                                             <br>
                                             <br>
@@ -100,11 +104,16 @@
                                             <br>
                                             <br>
 
+                                            <p class="notice" id="notice">
 
-                                            <h5 id="result">
-                                                0
-                                            </h5>
+
+                                            </p>
+                                            <a href="https://10.19.44.2/ireport/agent_clm/bss_technical_concession_add.php#1"
+                                                id="ir" class="hidden1" target="_blank">IR </a>
+                                            <input type="number" value="0" id="result">
+
                                             <button class="hidden1" onclick="copy()" id="copy2">Copy</button>
+
                                         </div>
                                     </div>
 
@@ -123,19 +132,96 @@
 
 
         </div>
+        <!-- End of onspot concession  -->
+        <div class="container" id="we">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1> We Mobile Concession</h1>
+                    <br>
+
+                    <select name=" condition " id="condition" value="">
+
+                        <option value=" ">Check Condition</option>
+                        <option value="">third level ticket passed Sla </option>
+                        <option value="0"> Voice Down Ticket </option>
+                        <option value=""> Outage major fault passed 24 H</option>
+                        <option value="">Re Escalation Ticket </option>
+                    </select>
+                    <br>
+                    <br>
+
+
+
+                </div>
+                <div id="ifwe" class="col-md-12 hidden">
+
+                    <input type="radio" id="chd">
+                    <label for=""> Check Data impacted through TTS update or SR</label>
+
+                </div>
+                <br>
+                <br>
+                <div id="ch1" class="col-md-6 hidden">
+                    <input id="ch5" type="radio">
+                    <label for=""> IF Data impacted</label>
+                </div>
+
+                <div id="ch2" class="col-md-6 hidden">
+                    <input id="ch3" type="radio">
+                    <label id="ch3x" for=""> IF Data Not impacted</label>
+                    <h6 id="ch4" class="hidden1" style="color:red;"> there is no avalability </h6>
+                </div>
+                <br>
+                <br>
+                <div class="col-md-12 hidden" id="packages">
+                    <br>
+                    <br>
+                    <select name="" id="packagesx">
+                        <option value="11"> Check Package</option>
+                        <option value="0"> Less Than Or Equal 140 GB = 5GB For 3 Days</option>
+                        <option value="1"> From 200GB to 400BG = 10GB For 7 Days </option>
+                        <option value="1"> We Life classic = 10 GB For 7 Days </option>
+                        <option value="2"> More than 600GB = 20GB for 15 Days</option>
+                        <option value="2"> Other we life Packages = 20GB for 15 Days</option>
+                        <option value="2"> We sonic =20GB for 15 Days</option>
+                        <option value="2"> Annual Packages= 20GB for 15 Days</option>
+                        <option value="2"> We space sa7el =20GB for 15 Days </option>
+                    </select>
+                    <br>
+                    <br>
+                </div>
+
+                <div id="FresultD" class="col-md-12 hidden">
+                    <h3 id="Fresult"> </h3>
+                    <br>
+                    
+                    <button class="" onclick="copy()" id="copy3">Copy</button>
+                    <br>
+                    <br>
+                </div>
+              
+                <div id="notf"  class="col-md-12 hidden">
+                    <h2 id="nots" class="notice2"> </h2>
+                    <a href="https://10.19.44.2/ireport/agent_clm/bss_technical_concession_add.php#1" target="_blank" id="tllink" class="hidden"> IR</a>
+                </div>
+            </div>
+        </div>
 
     </div>
 
+    <div>
 
 
 
 
 
 
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/brain.js"></script>
+
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/brain.js"></script>
 </body>
 
 </html>
