@@ -57,7 +57,7 @@ btn.onclick = function () {
   } else if (result.value > 5368709120 && result.value <= 21474836480) {
     result.style.color = "red";
     console.log("morethan");
-    document.getElementById("notice").textContent = "should  created  by  teamleader";
+    document.getElementById("notice").textContent = "Should handle by team leader create through IR";
     document.getElementById("notice").style.color = "red";
     document.getElementById("ir").classList.remove("hidden1");
   } else if (result.value > 21474836480) {
@@ -184,7 +184,7 @@ cpackages.onchange = function () {
     document.getElementById("Fresult").textContent = 10737418240;
     document.getElementById("FresultD").classList.remove("hidden");
     document.getElementById("notf").classList.remove("hidden");
-    document.getElementById("nots").textContent=" you should add by Team leader";
+    document.getElementById("nots").textContent=" Should handle by team leader create through IR";
     document.getElementById("nots").style.color="red";
     document.getElementById("tllink").classList.remove("hidden");
     document.getElementById("desc").classList.remove("hidden");
@@ -203,7 +203,7 @@ cpackages.onchange = function () {
     document.getElementById("Fresult").classList.remove("hidden");
     document.getElementById("FresultD").classList.remove("hidden");
     document.getElementById("notf").classList.remove("hidden");
-    document.getElementById("nots").textContent=" you should add by Team leader";
+    document.getElementById("nots").textContent=" Should handle by team leader create through IR";
     document.getElementById("nots").style.color="red";
     document.getElementById("tllink").classList.remove("hidden");
     document.getElementById("descs").textContent=" 20GB Will Be Added For 15 Days";
