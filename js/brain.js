@@ -153,6 +153,9 @@ condition.onchange = function () {
 checkif.onclick = function () {
   document.getElementById("ch1").classList.remove("hidden");
   document.getElementById("ch2").classList.remove("hidden");
+  
+  document.getElementById("ch5").checked=false;
+  document.getElementById("ch3").checked=false;
 
 }
 //this id  the  right choose 
