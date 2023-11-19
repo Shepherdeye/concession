@@ -57,7 +57,7 @@ btn.onclick = function () {
   } else if (result.value > 5368709120 && result.value <= 21474836480) {
     result.style.color = "red";
     console.log("morethan");
-    document.getElementById("notice").textContent = "Should handle by team leader create through IR";
+    document.getElementById("notice").textContent = "Should handle by team leader create through";
     document.getElementById("notice").style.color = "red";
     document.getElementById("ir").classList.remove("hidden1");
   } else if (result.value > 21474836480) {
@@ -119,10 +119,28 @@ condition.onchange = function () {
   if (condition.value == "0") {
     document.getElementById("ifwe").classList.remove("hidden");
 
-  } else {
-    document.getElementById("ifwe").classList.add("hidden");
 
+  } else if (condition.value == "1"){
+    document.getElementById("ifwe").classList.add("hidden");
     document.getElementById("packages").classList.remove("hidden");
+    document.getElementById("ch1").classList.add("hidden");
+    document.getElementById("ch2").classList.add("hidden");
+
+    // document.getElementById("ch3x").classList.add("hidden");
+
+
+
+
+  }else{
+    // document.getElementById("desc").classList.add("hidden");
+    // document.getElementById("descs").classList.add("hidden");
+    // document.getElementById("nots").classList.add("hidden");
+    // document.getElementById("notf").classList.add("hidden");
+    // document.getElementById("copy3").classList.add("hidden");
+    // document.getElementById("ifwe").classList.add("hidden");
+    // document.getElementById("Fresult").classList.add("hidden");
+    // document.getElementById("packages").classList.add("hidden");
+
 
 
   }
@@ -194,12 +212,19 @@ cpackages.onchange = function () {
 
 
   } else if (cpackages.value == "11") {
-    document.getElementById("Fresult").textContent = " ";
+  document.getElementById("Fresult").textContent = " ";
     document.getElementById("FresultD").classList.remove("hidden");
     document.getElementById("ch1").classList.remove("hidden");
     document.getElementById("ch2").classList.remove("hidden");
     document.getElementById("packagesx").classList.remove("hidden");
-    
+    document.getElementById("desc").classList.add("hidden");
+    document.getElementById("descs").classList.add("hidden");
+    document.getElementById("nots").classList.add("hidden");
+    document.getElementById("notf").classList.add("hidden");
+    document.getElementById("copy3").classList.add("hidden");
+
+
+
 
 
   } else {
