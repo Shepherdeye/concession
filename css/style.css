@@ -197,7 +197,13 @@
      background-color: #DDD;
  }
 
+#copy3{
 
+    outline: none !important;
+    border: none !important;
+    padding: 1px;
+    transition: none;
+}
 
 
 
