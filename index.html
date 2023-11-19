@@ -109,7 +109,7 @@
 
                                             </p>
                                             <a href="https://10.19.44.2/ireport/agent_clm/bss_technical_concession_add.php#1"
-                                                id="ir" class="hidden1" target="_blank">IR </a>
+                                                id="ir" class="hidden1" target="_blank" style="color: red;">IR</a>
                                             <input type="number" value="0" id="result">
 
                                             <button class="hidden1" onclick="copy()" id="copy2">Copy</button>
@@ -141,11 +141,11 @@
 
                     <select name=" condition " id="condition" value="">
 
-                        <option value=" ">Check Condition</option>
-                        <option value="">third level ticket passed Sla </option>
+                        <option value="22">Check Condition</option>
+                        <option value="1">third level ticket passed Sla </option>
                         <option value="0"> Voice Down Ticket </option>
-                        <option value=""> Outage major fault passed 24 Hour</option>
-                        <option value="">Re Escalated Ticket </option>
+                        <option value="1"> Outage major fault passed 24 Hour</option>
+                        <option value="1">Re Escalated Ticket </option>
                     </select>
                     <br>
                     <br>
@@ -159,6 +159,10 @@
                     <label for=""> Check Data impacted through TTS update or SR</label>
 
                 </div>
+
+                    
+
+
                 <br>
                 <br>
                 <div id="ch1" class="col-md-6 hidden">
@@ -173,6 +177,8 @@
                 </div>
                 <br>
                 <br>
+
+
                 <div class="col-md-12 hidden" id="packages">
                     <br>
                     <br>
@@ -180,10 +186,10 @@
                         <option value="11"> Check Package</option>
                         <option value="0"> Quota Less Than Or Equal 140 GB</option>
                         <option value="1"> Quota From 200GB to 400BG </option>
-                        <option value="1">  We Life classic  </option>
+                        <option value="1"> We Life classic </option>
                         <option value="2"> Quota More than 600GB </option>
-                        <option value="2">  Other we life Packages </option>
-                        <option value="2">  We sonic</option>
+                        <option value="2"> Other we life Packages </option>
+                        <option value="2"> We sonic</option>
                         <option value="2"> Annual Packages</option>
                         <option value="2"> Quota We space sa7el </option>
                     </select>
