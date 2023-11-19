@@ -125,6 +125,9 @@ condition.onchange = function () {
     document.getElementById("packages").classList.remove("hidden");
     document.getElementById("ch1").classList.add("hidden");
     document.getElementById("ch2").classList.add("hidden");
+        document.getElementById("chd").checked=false;
+    document.getElementById("ch5").checked=false;
+    document.getElementById("ch3").checked=false;
 
     // document.getElementById("ch3x").classList.add("hidden");
 
