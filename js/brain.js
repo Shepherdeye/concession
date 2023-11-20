@@ -218,16 +218,16 @@ cpackages.onchange = function () {
 
 
   } else if (cpackages.value == "11") {
-  document.getElementById("Fresult").textContent = " ";
-    document.getElementById("FresultD").classList.remove("hidden");
-    document.getElementById("ch1").classList.remove("hidden");
-    document.getElementById("ch2").classList.remove("hidden");
-    document.getElementById("packagesx").classList.remove("hidden");
-    document.getElementById("desc").classList.add("hidden");
-    document.getElementById("descs").classList.add("hidden");
-    document.getElementById("nots").classList.add("hidden");
-    document.getElementById("notf").classList.add("hidden");
-    document.getElementById("copy3").classList.add("hidden");
+  // document.getElementById("Fresult").textContent = " ";
+  //   document.getElementById("FresultD").classList.remove("hidden");
+  //   document.getElementById("ch1").classList.remove("hidden");
+  //   document.getElementById("ch2").classList.remove("hidden");
+  //   document.getElementById("packagesx").classList.remove("hidden");
+  //   document.getElementById("desc").classList.add("hidden");
+  //   document.getElementById("descs").classList.add("hidden");
+  //   document.getElementById("nots").classList.add("hidden");
+  //   document.getElementById("notf").classList.add("hidden");
+  //   document.getElementById("copy3").classList.add("hidden");
 
 
 
