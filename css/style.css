@@ -78,7 +78,7 @@
     border-radius: 10px;
     position: fixed;
     background-color: #fff;
-    width: 100%;
+    width: 1076px !important;
     height: 100vh;
     text-align: center;
     top: 50px;
@@ -95,7 +95,7 @@
     border-radius: 10px;
     position: fixed;
     background-color: #fff;
-    width: 100%;
+    width: 1076px !important;
     height: 100vh;
     text-align: center;
     top: 50px;
