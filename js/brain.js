@@ -16,21 +16,30 @@ let day = document.getElementById("days"),
   onspot = document.getElementById("onspoti"),
   condition = document.getElementById("condition"),
   checkif = document.getElementById("chd"),
+  outageCheck = document.getElementById("outagcheck"),
 
   btn = document.getElementById("btn");
 
 
 onspot.onclick = function () {
-  document.getElementById("we").classList.add("hidden");
-  document.getElementById("onspot").classList.remove("hidden");
+  // document.getElementById("we").classList.add("hidden");
+  document.getElementById("we").style.display = "none";
+
+  // document.getElementById("onspot").classList.remove("hidden");
+  document.getElementById("onspot").style.display = "block";
+
   mobile.checked = false;
   document.getElementById("start").classList.add("hidden");
 }
 mobile.onclick = function () {
-  document.getElementById("onspot").classList.add("hidden");
-  document.getElementById("we").classList.remove("hidden");
-  document.getElementById("start").classList.add("hidden")
+  // document.getElementById("onspot").classList.add("hidden");
+  document.getElementById("onspot").style.display = "none";
 
+  // document.getElementById("we").classList.remove("hidden");
+  document.getElementById("we").style.display = "block";
+
+  document.getElementById("start").classList.add("hidden")
+  document.getElementById("start").style.zIndex = "4"
   onspot.checked = false;
 
 }
@@ -81,6 +90,12 @@ btn.onclick = function () {
 Cases.onchange = function () {
   // console.log("sayed")
   duration.classList.remove("hidden");
+  if(this.value=="outage"){
+    outageCheck.classList.remove("hidden");
+  }else{
+    outageCheck.classList.add("hidden");
+
+  }
 }
 check.onclick = function () {
   // console.log("sayed")
@@ -120,21 +135,22 @@ condition.onchange = function () {
     document.getElementById("ifwe").classList.remove("hidden");
 
 
-  } else if (condition.value == "1"){
+  } else if (condition.value == "1") {
     document.getElementById("ifwe").classList.add("hidden");
     document.getElementById("packages").classList.remove("hidden");
     document.getElementById("ch1").classList.add("hidden");
     document.getElementById("ch2").classList.add("hidden");
-        document.getElementById("chd").checked=false;
-    document.getElementById("ch5").checked=false;
-    document.getElementById("ch3").checked=false;
+    document.getElementById("chd").checked = false;
+    document.getElementById("ch5").checked = false;
+    document.getElementById("ch3").checked = false;
+
 
     // document.getElementById("ch3x").classList.add("hidden");
 
 
 
 
-  }else{
+  } else {
     // document.getElementById("desc").classList.add("hidden");
     // document.getElementById("descs").classList.add("hidden");
     // document.getElementById("nots").classList.add("hidden");
@@ -153,10 +169,10 @@ condition.onchange = function () {
 checkif.onclick = function () {
   document.getElementById("ch1").classList.remove("hidden");
   document.getElementById("ch2").classList.remove("hidden");
-  
-  document.getElementById("ch5").checked=false;
-  document.getElementById("ch3").checked=false;
+  // document.getElementById("packages").classList.add("hidden");
 
+  document.getElementById("ch5").checked = false;
+  document.getElementById("ch3").checked = false;
 }
 //this id  the  right choose 
 let ch2 = document.getElementById("ch3");
@@ -168,8 +184,8 @@ ch2.onclick = function () {
   // cpackages.classList.remove("hidden");
   document.getElementById("desc").classList.add("hidden");
   document.getElementById("Fresult").classList.add("hidden");
-    document.getElementById("FresultD").classList.add("hidden");
-    document.getElementById("notf").classList.add("hidden");
+  document.getElementById("FresultD").classList.add("hidden");
+  document.getElementById("notf").classList.add("hidden");
 
 
 
@@ -185,21 +201,26 @@ document.getElementById("ch5").onclick = function () {
   document.getElementById("ch4").classList.add("hidden1");
 
 };
+
+
+// 
+
 let cpackages = document.getElementById("packagesx");
 cpackages.onchange = function () {
+
   if (cpackages.value == "0") {
     document.getElementById("Fresult").classList.remove("hidden");
     document.getElementById("Fresult").textContent = 5368709120;
     document.getElementById("FresultD").classList.remove("hidden");
     document.getElementById("notf").classList.remove("hidden");
-    document.getElementById("nots").textContent=" you should add by Using  BSS";
-    document.getElementById("nots").style.color="Green";
+    document.getElementById("nots").textContent = " you should add by Using  BSS";
+    document.getElementById("nots").style.color = "Green";
     document.getElementById("tllink").classList.add("hidden");
     document.getElementById("desc").classList.remove("hidden");
-    document.getElementById("descs").textContent=" 5GB Will Be Added For 3 Days";
-    
+    document.getElementById("descs").textContent = " 5GB Will Be Added For 3 Days";
 
-    
+
+
 
 
 
@@ -208,26 +229,26 @@ cpackages.onchange = function () {
     document.getElementById("Fresult").textContent = 10737418240;
     document.getElementById("FresultD").classList.remove("hidden");
     document.getElementById("notf").classList.remove("hidden");
-    document.getElementById("nots").textContent=" Should handle by team leader create through";
-    document.getElementById("nots").style.color="red";
+    document.getElementById("nots").textContent = " Should handle by team leader create through";
+    document.getElementById("nots").style.color = "red";
     document.getElementById("tllink").classList.remove("hidden");
     document.getElementById("desc").classList.remove("hidden");
-    document.getElementById("descs").textContent=" 10GB Will Be Added For 7 Days ";
-    
+    document.getElementById("descs").textContent = " 10GB Will Be Added For 7 Days ";
+
 
 
 
   } else if (cpackages.value == "11") {
-  // document.getElementById("Fresult").textContent = " ";
-  //   document.getElementById("FresultD").classList.remove("hidden");
-  //   document.getElementById("ch1").classList.remove("hidden");
-  //   document.getElementById("ch2").classList.remove("hidden");
-  //   document.getElementById("packagesx").classList.remove("hidden");
-  //   document.getElementById("desc").classList.add("hidden");
-  //   document.getElementById("descs").classList.add("hidden");
-  //   document.getElementById("nots").classList.add("hidden");
-  //   document.getElementById("notf").classList.add("hidden");
-  //   document.getElementById("copy3").classList.add("hidden");
+    // document.getElementById("Fresult").textContent = " ";
+    // document.getElementById("FresultD").classList.remove("hidden");
+    // document.getElementById("ch1").classList.remove("hidden");
+    // document.getElementById("ch2").classList.remove("hidden");
+    // document.getElementById("packagesx").classList.remove("hidden");
+    // document.getElementById("desc").classList.add("hidden");
+    // document.getElementById("descs").classList.add("hidden");
+    // document.getElementById("nots").classList.add("hidden");
+    // document.getElementById("notf").classList.add("hidden");
+    // document.getElementById("copy3").classList.add("hidden");
 
 
 
@@ -238,10 +259,10 @@ cpackages.onchange = function () {
     document.getElementById("Fresult").classList.remove("hidden");
     document.getElementById("FresultD").classList.remove("hidden");
     document.getElementById("notf").classList.remove("hidden");
-    document.getElementById("nots").textContent=" Should handle by team leader create through";
-    document.getElementById("nots").style.color="red";
+    document.getElementById("nots").textContent = " Should handle by team leader create through";
+    document.getElementById("nots").style.color = "red";
     document.getElementById("tllink").classList.remove("hidden");
-    document.getElementById("descs").textContent=" 20GB Will Be Added For 15 Days";
+    document.getElementById("descs").textContent = " 20GB Will Be Added For 15 Days";
     document.getElementById("desc").classList.remove("hidden");
 
 
@@ -260,6 +281,27 @@ copyText3.onclick = function () {
   navigator.clipboard.writeText(fresult.innerText);
   document.getElementById("copy3").style.background = "white";
   document.getElementById("copy3").style.border = "white";
-  
+
 
 }
+
+// function  to  the  outage  type  if  instability or down 
+document.getElementById("DownS").onclick=function(){
+  document.getElementById("DownP").classList.remove("hidden");
+  document.getElementById("InsaS").checked=false;
+}
+
+
+  document.getElementById("InsaS").onclick=function(){
+    document.getElementById("chekusage1").classList.remove("hidden");
+    document.getElementById("chekusage2").classList.remove("hidden");
+    document.getElementById("DownS").checked=false;
+
+  }
+
+  document.getElementById("instability1").onclick=function(){
+    document.getElementById("irusage1").classList.remove("hidden");
+  }
+  document.getElementById("instability2").onclick=function(){
+    document.getElementById("irusage2").classList.remove("hidden");
+  }
