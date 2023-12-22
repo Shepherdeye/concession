@@ -13,215 +13,300 @@
 
 <body>
 
-    <div class="container-fluid">
-        <label class="mainchoiceL" for=""> On Spot Concession </label>
+
+    <!-- As a heading -->
+    <nav>
+        <div class="row">
+
+
+            <div class="col-md-6 flexItem">
+                <div class="NavE1">
+                    <label class="mainchoiceL" for=""> On Spot Concession </label>
+                    <input class="maininput" type="radio" id="onspoti" onclick="this.disabled=false">
+                </div>
+            </div>
+            <div class="col-md-6 flexItem">
+                <div class="NavE2">
+                    <label class="mainchoiceL2" for=""> We mobile Concession </label>
+                    <input class="maininput2" type="radio" id="mobilei">
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- <div class="containerF"> -->
+    <!-- <label class="mainchoiceL" for=""> On Spot Concession </label>
         <input class="maininput" type="radio" id="onspoti" onclick="this.disabled=false">
         <label class="mainchoiceL2" for=""> We mobile Concession </label>
-        <input class="maininput2" type="radio" id="mobilei">
+        <input class="maininput2" type="radio" id="mobilei"> -->
 
 
-        <!-- start empty page -->
-        <div id="start" class=" start"></div>
+    <!-- start empty page -->
+    <div id="start" class="   start">
+        <img src="images/logo.png" alt="">
+        <h2 style="color: #5b2892;font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;"> Compensation User Guide</h2>
+    </div>
 
-        <!-- onspot cocession -->
-        <div class="container" id="onspot">
+    <!-- onspot cocession -->
+    <div class="O " id="onspot">
 
-            <h1> Onspot Concession </h1>
-            <br>
-            <br>
-            <select class="cases" id="Cases">
-                <option value="apple">ٍselect Case </option>
-                <option value="apple">outage </option>
-                <option value="banana">data down</option>
-                <option value="orange">data and voice down </option>
-                <option value="grape">wrong card and port </option>
-                <option value="grape"> physical instability </option>
-                <option value="grape"> blq</option>
-                <option value="grape"> slowness </option>
-            </select>
-            <br>
-            <div>
-                <br>
-                <br>
-                <div class="duration hidden" id="duration">
-
-                    <input type="radio" id="check">
-                    <label for="" class="check"> check the duration </label>
-                    <br>
-                    <br>
-
-                    <div class="row hidden" id="row">
-                        <div class="col-md-6">
-                            <div class=" less">
-                                <input type="radio" id="less">
-                                <label for=""> IF less than 12 hour </label>
-                                <h6 class="hidden1" id="lessThan"> 12 H = 3 G</h3>
-                                    <h3 class="hidden1" id="lessThan2">3221225472 </h3>
-                                    <button class="hidden1" onclick="copy()" id="copy">Copy</button>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="more">
-                                <input type="radio" id="more">
-
-                                <label for=""> IF More than 12 hour </label>
-                                <br>
-                                <br>
-                                <div class="row hidden1 " id="moreThan">
-                                    <div class="col-md-6">
-                                        <select name="" id="super" class="super">
-                                            <option value="1"> Select Package </option>
-
-                                            <option value="1"> super speed 30 G = 1G Per day </option>
-                                            <option value="3"> super speed 100 G = 3G Per day </option>
-                                            <option value="5"> super speed 140 G = 5G Per day </option>
-                                            <option value="7"> super speed 200 G = 7G Per day </option>
-                                            <option value="8"> super speed 250 G = 8G Per day </option>
-                                            <option value="13"> super speed 400 G = 13G Per day </option>
-                                            <option value="20"> super speed 600 G = 20G Per day </option>
-                                            <option value="5"> Mega speed 140 = 5G Per day </option>
-                                            <option value="8"> Mega speed 250 =8G Per day </option>
-                                            <option value="5"> ultra speed 140= 5G Per day </option>
-                                            <option value="8"> ultra speed 250 = 8G Per day</option>
-                                            <option value="20"> ultra speed 600 = 20G Per day</option>
-                                            <option value="1"> super telephonet 20g = 1G Per day</option>
-                                            <option value="1"> super telephonet 30g = 1G Per day </option>
-                                            <option value="5"> super telephonet 145 140 G = 5G Per day </option>
-                                            <option value="8"> super telephonet 230 250 G = 8G Per day </option>
-                                            <option value="5"> we max sv = 50G per day </option>
+        <h1> Onspot Concession </h1>
+        <br>
+        <br>
+        <select class="cases" id="Cases">
+            <option value="apple">ٍselect Case </option>
+            <option value="outage">outage </option>
+            <option value="banana">data down</option>
+            <option value="orange">data and voice down </option>
+            <option value="grape">wrong card and port </option>
+            <option value="grape"> physical instability </option>
+            <option value="grape"> blq</option>
+            <option value="grape"> slowness </option>
+        </select>
+        <br>
 
 
-                                        </select>
-                                        <br>
-                                        <br>
 
-                                        <div class="col-md-6">
-                                            <input type="number" name="" id="gbytes" class=" gbytes"
-                                                placeholder=" Enter number of G byte">
-                                            <br>
-                                            <br>
-                                            <input type="number" name="" id="days" class=" days"
-                                                placeholder=" Enter number of Days">
-                                            <br>
-                                            <br>
-                                            <button id="btn" class="btn-info">RESULT</button>
-                                            <br>
-                                            <br>
+        <!-- Check  if  the  outage  down or instability -->
+        <br>
+        <br>
+        <div class="outagtype hidden" id="outagcheck">
+            <div class="row">
 
-                                            <p class="notice" id="notice">
+                <div class="col-md-4">
 
+                    <div class="Down">
+                        <input type="radio" id="DownS">
 
-                                            </p>
-                                            <a href="https://10.19.44.2/ireport/agent_clm/bss_technical_concession_add.php#1"
-                                                id="ir" class="hidden1" target="_blank" style="color: red;">IR</a>
-                                            <input type="number" value="0" id="result">
+                        <label for="">if Down Service</label>
+                        <br>
+                        <p class="hidden" id="DownP" style="color: green;"> " Go To Next Step Check The Duration "</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="instability">
+                        <input type="radio" id="InsaS">
 
-                                            <button class="hidden1" onclick="copy()" id="copy2">Copy</button>
+                        <label for="">if instability Service</label>
 
-                                        </div>
-                                    </div>
-
-                                </div>
+                        <br>
+                        <div class="chekusage1 hidden" id="chekusage1">
+                            <input type="radio" name="instability1" id="instability1">
 
 
-                            </div>
+                            <label for=""> If Usage From Query CDR Low</label>
+                            <br>
+                            <p>If Usage <= 1GB For duration 12 to 24 Hour <br>and
+                                    Lessthan Or Equal 5GB for more than 24 Hour <br>
+                                    <span class="hidden" id="irusage1" style="color: green;">"Compensate Customer
+                                        Normally"</span>
+                            </p>
+
                         </div>
 
+                        <div class="chekusage2 hidden" id="chekusage2">
+                            <input type="radio" name="instability1" id="instability2">
+                            <label for=""> If Usage From Query CDR High</label>
+                            <br>
+                            <p>If Usage > 1GB For duration 12 to 24 Hour <br>and
+                                Morethan 5GB for more than 24 Hour <br>
+                                <span class="hidden" id="irusage2" style="color: red;
+                                 text-transform: capitalize;">" No Compensation for this customer
+                                    due to High usage
+                                    "</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
-
-
-
         </div>
+        <div>
+            <br>
+            <br>
+            <div class="duration hidden" id="duration">
 
-        <!-- End of onspot concession  -->
-
-        <!-- We mobile  concession  -->
-
-
-
-        <div class="container" id="we">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1> We Mobile Concession</h1>
-                    <br>
-
-                    <select name=" condition " id="condition" value="">
-                        <option value="22" selected="false" >Check Condition</option>
-                        <option value="1">third level ticket passed Sla </option>
-                        <option value="0"> Voice Down Ticket </option>
-                        <option value="1"> Outage major fault passed 24 Hour</option>
-                        <option value="1">Re Escalated Ticket </option>
-                    </select>
-
-
-
-                </div>
-                <div id="ifwe" class="col-md-12 hidden">
-
-                    <input type="radio" id="chd">
-                    <label for=""> Check Data impacted through TTS update or SR</label>
-
-                </div>
-
-
-
-
-                <div id="ch1" class="col-md-6 hidden">
-                    <input id="ch5" type="radio">
-                    <label for=""> IF Data impacted</label>
-                </div>
-
-                <div id="ch2" class="col-md-6 hidden">
-                    <input id="ch3" type="radio">
-                    <label id="ch3x" for=""> IF Data Not impacted</label>
-                    <h6 id="ch4" class="hidden1" style="color:red;">That is not available </h6>
-                </div>
+                <input type="radio" id="check">
+                <label for="" class="check"> check the duration </label>
                 <br>
                 <br>
 
+                <div class="row hidden" id="row">
+                    <div class="col-md-6">
+                        <div class=" less">
+                            <input type="radio" id="less">
+                            <label for=""> IF less than 12 hour </label>
+                            <h6 class="hidden1" id="lessThan"> 12 H = 3 G</h3>
+                                <h3 class="hidden1" id="lessThan2">3221225472 </h3>
+                                <button class="hidden1" onclick="copy()" id="copy">Copy</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="more">
+                            <input type="radio" id="more">
 
-                <div class="col-md-12 hidden" id="packages">
-                    <br>
-                    <br>
-                    <select class="package" name="" id="packagesx">
-                        <option value="11"> Check Package</option>
-                        <option value="0"> Quota Less Than Or Equal 140 GB</option>
-                        <option value="1"> Quota From 200GB to 400BG </option>
-                        <option value="1"> We Life classic </option>
-                        <option value="2"> Quota More than 600GB </option>
-                        <option value="2"> Other we life Packages </option>
-                        <option value="2"> We sonic</option>
-                        <option value="2"> Annual Packages</option>
-                        <option value="2"> Quota We space sa7el </option>
-                    </select>
-                    <br>
-                    <br>
-                </div>
-                <div class="col-md-12 hidden" id="desc">
-                    <h3 id="descs"></h3>
-                </div>
-                <div id="FresultD" class="col-md-12 hidden">
-                    <h3 id="Fresult"> </h3>
-                    <br>
+                            <label for=""> IF More than 12 hour </label>
+                            <br>
+                            <br>
+                            <div class="row hidden1 " id="moreThan">
+                                <div class="col-md-6">
+                                    <select name="" id="super" class="super">
+                                        <option value="1"> Select Package </option>
 
-                    <button class="" onclick="copy()" id="copy3">Copy</button>
-                    <br>
-                    <br>
-                </div>
+                                        <option value="1"> super speed 30 G = 1G Per day </option>
+                                        <option value="3"> super speed 100 G = 3G Per day </option>
+                                        <option value="5"> super speed 140 G = 5G Per day </option>
+                                        <option value="7"> super speed 200 G = 7G Per day </option>
+                                        <option value="8"> super speed 250 G = 8G Per day </option>
+                                        <option value="13"> super speed 400 G = 13G Per day </option>
+                                        <option value="20"> super speed 600 G = 20G Per day </option>
+                                        <option value="5"> Mega speed 140 = 5G Per day </option>
+                                        <option value="8"> Mega speed 250 =8G Per day </option>
+                                        <option value="5"> ultra speed 140= 5G Per day </option>
+                                        <option value="8"> ultra speed 250 = 8G Per day</option>
+                                        <option value="20"> ultra speed 600 = 20G Per day</option>
+                                        <option value="1"> super telephonet 20g = 1G Per day</option>
+                                        <option value="1"> super telephonet 30g = 1G Per day </option>
+                                        <option value="5"> super telephonet 145 140 G = 5G Per day </option>
+                                        <option value="8"> super telephonet 230 250 G = 8G Per day </option>
+                                        <option value="5"> we max sv = 50G per day </option>
 
-                <div id="notf" class="col-md-12 hidden">
-                    <h2 id="nots" class="notice2"> </h2>
-                    <a href="https://10.19.44.2/ireport/agent_clm/bss_technical_concession_add.php#1" target="_blank"
-                        id="tllink" class="hidden" style="color: red; font-weight: bold;"> IR</a>
+
+                                    </select>
+                                    <br>
+                                    <br>
+
+                                    <div class="col-md-6">
+                                        <input type="number" name="" id="gbytes" class=" gbytes"
+                                            placeholder=" Enter number of G byte">
+                                        <br>
+                                        <br>
+                                        <input type="number" name="" id="days" class=" days"
+                                            placeholder=" Enter number of Days">
+                                        <br>
+                                        <br>
+                                        <button id="btn" class="btn-info">RESULT</button>
+                                        <br>
+                                        <br>
+
+                                        <p class="notice" id="notice">
+
+
+                                        </p>
+                                        <a href="https://10.19.44.2/ireport/agent_clm/bss_technical_concession_add.php#1"
+                                            id="ir" class="hidden1" target="_blank" style="color: red;">IR</a>
+                                        <input type="number" value="0" id="result">
+
+                                        <button class="hidden1" onclick="copy()" id="copy2">Copy</button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
+
+
+
     </div>
+
+    <!-- End of onspot concession  -->
+
+    <!-- We mobile  concession  -->
+
+
+
+    <div class="M " id="we">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> We Mobile Concession</h1>
+                <br>
+
+                <select name=" condition " id="condition" value="">
+                    <option value="22" selected="false">Check Condition</option>
+                    <option value="1">third level ticket passed Sla </option>
+                    <option value="0"> Voice Down Ticket </option>
+                    <option value="1"> Outage major fault passed 24 Hour</option>
+                    <option value="1">Re Escalated Ticket </option>
+                </select>
+                <br>
+                <br>
+
+
+
+            </div>
+            <div id="ifwe" class="col-md-12 hidden">
+
+                <input type="radio" id="chd">
+                <label for=""> Check Data impacted through TTS update or SR</label>
+
+            </div>
+
+
+
+
+            <br>
+            <br>
+            <div id="ch1" class="col-md-6 hidden">
+                <input id="ch5" type="radio">
+                <label for=""> IF Data impacted</label>
+            </div>
+
+            <div id="ch2" class="col-md-6 hidden">
+                <input id="ch3" type="radio">
+                <label id="ch3x" for=""> IF Data Not impacted</label>
+                <h6 id="ch4" class="hidden1" style="color:red;">That is not available </h6>
+            </div>
+            <br>
+            <br>
+
+
+            <div class="col-md-12 hidden" id="packages">
+                <br>
+                <br>
+                <select class="package" name="" id="packagesx">
+                    <option value="11"> Check Package</option>
+                    <option value="0"> Quota Less Than Or Equal 140 GB</option>
+                    <option value="1"> Quota From 200GB to 400BG </option>
+                    <option value="1"> We Life classic </option>
+                    <option value="2"> Quota More than 600GB </option>
+                    <option value="2"> Other we life Packages </option>
+                    <option value="2"> We sonic</option>
+                    <option value="2"> Annual Packages</option>
+                    <option value="2"> Quota We space sa7el </option>
+                </select>
+                <br>
+                <br>
+            </div>
+            <div class="col-md-12 hidden" id="desc">
+                <h3 id="descs"></h3>
+            </div>
+            <div id="FresultD" class="col-md-12 hidden">
+                <h3 id="Fresult"> </h3>
+                <br>
+
+                <button class="" onclick="copy()" id="copy3">Copy</button>
+                <br>
+                <br>
+            </div>
+
+            <div id="notf" class="col-md-12 hidden">
+                <h2 id="nots" class="notice2"> </h2>
+                <a href="https://10.19.44.2/ireport/agent_clm/bss_technical_concession_add.php#1" target="_blank"
+                    id="tllink" class="hidden" style="color: red; font-weight: bold;"> IR</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
 
     <div>
 
@@ -239,3 +324,5 @@
 </body>
 
 </html>
+
+
