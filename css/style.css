@@ -129,7 +129,7 @@ img{
  #we {
 
      border-radius: 10px;
-     position: relative;
+     position: absolute;
      background-color: #fff;
      width: 80%;
      top: 9%;
